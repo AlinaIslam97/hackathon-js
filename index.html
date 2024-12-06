@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coranu</title>
+  <link rel="icon" href="images/logo.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="container">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white mb-4">
+    <div class="container d-flex justify-content-between align-items-center">
+      <!-- Logo -->
+      <div>
+        <img src="images/logo.jpg" alt="Logo" width="25%" height="100%" class="d-inline-block align-text-top">
+        <span><a class="navbar-brand" href="#">Coranu</a></span>
+      </div>
+      <!-- Search Bar -->
+      <form class="d-flex me-3">
+        <input class="form-control me-2 search-bar" type="search" placeholder="Search" aria-label="Search">
+      </form>
+
+      <div class="d-flex align-items-center">
+        <!-- Login/Register Button -->
+        <button class="btn btn-primary"><a href="signup.html">Login/Register</a></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Thoughts, Ideas, and Stories</h1>
+    <p>A space where creativity flows, ideas take shape, and stories come to life. Dive in, explore, and connect with
+      insights that inspire and resonate.</p>
+  </section>
+
+  <hr>
+
+  <!-- Main Content -->
+  <div class="container-fluid main-content">
+    <div class="row">
+      <!-- Sidebar -->
+      <aside class="col-md-3">
+        <h5 class="side-h5">Blog Topics</h5>
+        <ul class="list-unstyled">
+          <li>Company</li>
+          <li>Design</li>
+          <li>Technology</li>
+          <li>Crypto</li>
+          <li>Artificial Intelligence</li>
+          <li>Work</li>
+        </ul>
+        <h5 class="mt-4 side-h5">Guide and Tools</h5>
+        <ul class="list-unstyled">
+          <li>Guidelines</li>
+          <li>Mentorship</li>
+          <li>Tutorial</li>
+          <li>Training</li>
+          <li>Career</li>
+          <li>Self Care</li>
+        </ul>
+      </aside>
+
+      <!-- Blog Section -->
+      <section class="col-md-9 blog-section">
+
+        <div class="container mt-5">
+          <h3>Create a Blog Post</h3>
+          <form id="blogForm" class="mb-5">
+            <div class="mb-3">
+              <label for="blogTitle" class="form-label">Blog Title</label>
+              <input type="text" class="form-control" id="blogTitle" required>
+            </div>
+            <div class="mb-3">
+              <label for="blogAuthor" class="form-label">Author</label>
+              <input type="text" class="form-control" id="blogAuthor" required>
+            </div>
+            <div class="mb-3">
+              <label for="blogContent" class="form-label">Content</label>
+              <textarea class="form-control" id="blogContent" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Post Blog</button>
+          </form>
+        </div>
+
+        <!-- Trending Topics -->
+        <!-- <section class="topics container row mb-4">
+          <h5>Trending Topics</h5>
+          <div class="d-flex flex-wrap justify-content-around mt-3">
+            <button class="btn btn-outline-secondary">Design Thinking</button>
+            <button class="btn btn-outline-secondary">Technology</button>
+            <button class="btn btn-outline-secondary">Web3</button>
+            <button class="btn btn-outline-secondary">Programming</button>
+            <button class="btn btn-outline-secondary">AI</button>
+          </div>
+        </section>
+
+        <div>
+          <div class="row mb-4">
+            <div class="col-md-8">
+              <h6>Mar 1</h6>
+              <h4>Powerful Trading Tools and Features for Experienced Investors</h4>
+              <p class="text-muted">I’m always trying to think of new and interesting
+                business ideas. I generally try to come up with ideas
+                by thinking of what I would want to do or see in the
+                world. Then, I try to find reasons why it wouldn’t work...</p>
+              <small>By Mark Tuchel | 7 min read</small>
+            </div>
+          </div>
+
+          <div class="row mb-4">
+            <div class="col-md-8">
+              <h6>Jan 2</h6>
+              <h4>
+                <a href="blog-detail.html" style="text-decoration: none; color: inherit;">We are implementing AI and
+                  Technology
+                </a>
+              </h4>
+              <p class="text-muted">I’m always trying to think of new and interesting
+                business ideas. I generally try to come up with ideas
+                by thinking of what I would want to do or see in the
+                world. Then, I try to find reasons why it wouldn’t work....</p>
+              <small>By Harry Oland | 4 min read</small>
+            </div>
+          </div>
+        </div> -->
+      </section>
+    </div>
+  </div>
+
+  <!-- Newsletter -->
+  <section class="newsletter">
+    <div class="footer">
+      <h6>Stay up to date</h6>
+      <h3>Join Our Newsletter</h3>
+      <form>
+        <input type="email" placeholder="Enter your email" class="form-control my-3" required>
+        <button class="btn btn-primary">Submit</button>
+      </form>
+      <p class="text-muted">*You can unsubscribe anytime</p>
+    </div>
+  </section>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="module" src="firebase.js"></script>
+  <script type="module" src="app.js"></script>
+</body>
+
+</html>

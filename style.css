@@ -1,0 +1,57 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #F9F9F9;
+  margin: 0;
+  padding: 0;
+}
+.navbar-brand {
+  font-weight: 700;
+}
+.navbar .btn {
+  font-weight: 600;
+}
+.main-content {
+  padding: 20px;
+}
+.sidebar {
+  border-right: 1px solid #dee2e6;
+  padding-right: 20px;
+}
+.blog-section img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.blog-section h4 {
+  font-weight: 700;
+}
+.newsletter {
+  background-color: #FFFFFF;
+  padding: 30px 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+.newsletter h3 {
+  font-weight: 700;
+}
+
+.blog-detail {
+  padding: 40px 20px;
+}
+.blog-detail h1 {
+  font-weight: 700;
+}
+
+.footer{
+  width: 100%;
+  background-color: #FFFFFF;
+}
+
+button a{
+  color: white;
+  background-color: #1C5CFF;
+}
+
+.side-h5{
+  color: #1C5CFF;
+}
